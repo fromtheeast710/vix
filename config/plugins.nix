@@ -3,7 +3,7 @@
     lsp = {
       enable = true;
       servers = {
-        nixd.enable = true;
+        # nixd.enable = true;
         bashls.enable = true;
       };
     };
@@ -23,8 +23,10 @@
     };
     mini = {
       enable = true;
+      mockDevIcons = true;
       modules = {
         files = { };
+        icons = { };
       };
     };
     lualine.enable = true;

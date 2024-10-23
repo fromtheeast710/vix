@@ -12,4 +12,4 @@ u:
 
 # install profile
 i:
-  nix profile remove vix && nix profile install .#
+  nix profile remove nvx && nix profile install .#
