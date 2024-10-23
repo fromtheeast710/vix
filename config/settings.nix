@@ -30,7 +30,8 @@
   };
 
   highlight = {
-    Comment.italic = true;
+    # Comment.italic = true;
+    Comment.fg = "#79808B";
   };
 
   colorschemes.onedark.enable = true;

@@ -3,30 +3,32 @@
     lsp = {
       enable = true;
       servers = {
-        # nixd.enable = true;
+        nixd.enable = true;
         bashls.enable = true;
-        # lua-ls.enable = true;
-        # rust-analyzer = true;
-        # tinymist.enable = true;
       };
     };
-    # which-key = {
-    #   enable = true;
-    # };
-    # neo-tree = {
-    #   enable = true;
-    # };
-    # direnv = {
-    #   enable = true;
-    # };
-    # telescope = {
-    #   enable = true;
-    # };
-    lualine = {
+    which-key = {
       enable = true;
+      settings = {
+        delay = 200;
+        expand = 1;
+        notify = false;
+        preset = false;
+        replace = { };
+      };
     };
-    bufferline = {
+    vim-matchup = {
       enable = true;
+      delimNoSkips = 0;
     };
+    mini = {
+      enable = true;
+      modules = {
+        files = { };
+      };
+    };
+    lualine.enable = true;
+    bufferline.enable = true;
+    nvim-autopairs.enable = true;
   };
 }
